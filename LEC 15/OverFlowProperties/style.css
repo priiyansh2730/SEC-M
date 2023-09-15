@@ -1,0 +1,21 @@
+div{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* font-size: medium; */
+}
+div div p{
+    font-size: 25px;
+    font-family: cursive;
+    text-align: center;
+    border: 2px solid black;
+    color: blueviolet;
+    background-color: azure;
+    text-shadow: 3px 2px 2px,;
+    box-shadow: 5px 5px 5px;
+}
+#prem{
+    font-size: 30px;
+    /* text-decoration: dotted; */
+    text-decoration: line-through;
+}
