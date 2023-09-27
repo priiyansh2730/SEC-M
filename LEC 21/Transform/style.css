@@ -1,0 +1,51 @@
+/* .container{
+    width: 300px;
+    height: 200px;
+    background-color: aqua;
+    margin: 100px auto;
+    display: flex;
+    transition: 2s;
+}
+h1{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 5px 8px #000;
+    margin: auto;
+}
+.container:hover{
+    transform: translateY(100px);
+    transform: translate(200px, 50px);
+    transform: rotate3d(2,1,-1,60deg);
+    transform: rotate(60deg);
+    transform: scale(2,1.5);
+    transform: skew(45deg,45deg);
+} */
+/* --------------------------------------------- */
+
+
+.card_container{
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+    position: relative;   
+    transition: 2s;
+    transform-style: preserve-3d;
+}
+.side-a, .side-b{
+    position: absolute;
+}
+.side-a{
+    background-color: aqua;
+    z-index: 10;
+    backface-visibility: hidden;
+    /* object-fit: scale-down; */
+}
+.side-b{
+    background-color: lightcoral;
+    transform: rotateY(-180deg);
+}
+.card_conatiner:hover{
+    transform: rotateY(18deg);
+}
