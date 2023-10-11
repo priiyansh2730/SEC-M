@@ -1,4 +1,5 @@
-console.log(Math.PI);
-console.log(Math.E);
-console.log(Math.LN2);
-
+let a = 10;
+let b;
+if(a>5 || b){
+    console.log("true");
+}
