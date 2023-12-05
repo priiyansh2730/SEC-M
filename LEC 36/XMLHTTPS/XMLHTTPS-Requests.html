@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+
+<script>
+    let req = new XMLHttpRequest();
+    req.open('GET', 'https://isro.vercel.app/api/spacecrafts');
+    req.send();
+    req.onload = function(){
+        console.log(JSON.parse(this.response).spacecrafts[0].name);
+        // console.log(JSON.parse(this.response).spacecrafts[1].name);
+        // console.log(JSON.parse(this.response).spacecrafts[2].name);
+        // console.log(JSON.parse(this.response).spacecrafts[3].name);
+        // console.log(JSON.parse(this.response).spacecrafts[4].name);
+    }
+</script>
+</html>
